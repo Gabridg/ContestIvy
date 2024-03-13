@@ -1,0 +1,390 @@
+  body {
+    background-color: #272727;
+    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#727272;
+    font-weight:400;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color:#222;
+    margin:0 0 20px;
+  }
+  
+  p, ul, ol, table, pre, dl {
+    margin:0 0 20px;
+  }
+  
+  h1, h2, h3 {
+    line-height:1.1;
+  }
+  
+  h1 {
+    font-size:28px;
+  }
+  
+  h2 {
+    color:#393939;
+  }
+  
+  h3, h4, h5, h6 {
+    color:#494949;
+  }
+  
+  a {
+    color:#39c;
+    text-decoration:none;
+  }
+  
+  a:hover {
+    color:#069;
+  }
+
+  body{
+    background-image: url("../images/background.jpg");
+  }
+  
+  a small {
+    font-size:11px;
+    color:#777;
+    margin-top:-0.3em;
+    display:block;
+  }
+  
+  a:hover small {
+    color:#777;
+  }
+  
+  .wrapper {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(244,0,255,1) 50%, rgba(255,255,255,1) 100%);
+    background-clip: text !important;
+    background-size: 100% !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important; 
+    -moz-background-clip: text !important;
+    -moz-text-fill-color: transparent !important;
+    color: transparent !important;
+    width:860px;
+    margin:0 auto;
+    font-weight: bold;
+  }
+  
+  blockquote {
+    border-left:1px solid #e5e5e5;
+    margin:0;
+    padding:0 0 0 20px;
+    font-style:italic;
+  }
+  
+  code, pre {
+    font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+    color:#333;
+    font-size:12px;
+  }
+  
+  pre {
+    padding:8px 15px;
+    background: #f8f8f8;
+    border-radius:5px;
+    border:1px solid #e5e5e5;
+    overflow-x: auto;
+  }
+  
+  table {
+    width:100%;
+    border-collapse:collapse;
+  }
+  
+  th, td {
+    text-align:left;
+    padding:5px 10px;
+    border-bottom:1px solid #e5e5e5;
+  }
+  
+  dt {
+    color:#444;
+    font-weight:700;
+  }
+  
+  th {
+    color:#444;
+  }
+  
+  img {
+    max-width:100%;
+  }
+  
+  header {
+    width:270px;
+    -webkit-font-smoothing:subpixel-antialiased;
+  }
+  
+  header ul {
+    list-style:none;
+    height:40px;
+    padding:0;
+    background: #f4f4f4;
+    border-radius:5px;
+    border:1px solid #e0e0e0;
+    width:270px;
+  }
+  
+  header li {
+    width:89px;
+    float:left;
+    border-right:1px solid #e0e0e0;
+    height:40px;
+  }
+  
+  header li:first-child a {
+    border-radius:5px 0 0 5px;
+  }
+  
+  header li:last-child a {
+    border-radius:0 5px 5px 0;
+  }
+  
+  header ul a {
+    line-height:1;
+    font-size:11px;
+    color:#999;
+    display:block;
+    text-align:center;
+    padding-top:6px;
+    height:34px;
+  }
+  
+  header ul a:hover {
+    color:#999;
+  }
+  
+  header ul a:active {
+    background-color:#f0f0f0;
+  }
+  
+  strong {
+    color:#222;
+    font-weight:700;
+  }
+  
+  header ul li + li + li {
+    border-right:none;
+    width:89px;
+  }
+  
+  header ul a strong {
+    font-size:14px;
+    display:block;
+    color:#222;
+  }
+  
+  section {
+    width:500px;
+    float:right;
+    padding-bottom:50px;
+  }
+  
+  small {
+    font-size:11px;
+  }
+  
+  hr {
+    border:0;
+    background:#e5e5e5;
+    height:1px;
+    margin:0 0 20px;
+  }
+  
+  footer {
+    width:270px;
+    float:left;
+    position:fixed;
+    bottom:50px;
+    -webkit-font-smoothing:subpixel-antialiased;
+  }
+  
+  @media print, screen and (max-width: 960px) {
+  
+    div.wrapper {
+      width:auto;
+      margin:0;
+    }
+  
+    header, section, footer {
+      float:none;
+      position:static;
+      width:auto;
+    }
+  
+    header {
+      padding-right:320px;
+    }
+  
+    section {
+      border:1px solid #e5e5e5;
+      border-width:1px 0;
+      padding:20px 0;
+      margin:0 0 20px;
+    }
+  
+    header a small {
+      display:inline;
+    }
+  
+    header ul {
+      position:absolute;
+      right:50px;
+      top:52px;
+    }
+  }
+  
+  @media print, screen and (max-width: 720px) {
+    body {
+      word-wrap:break-word;
+    }
+  
+    header {
+      padding:0;
+    }
+  
+    header ul, header p.view {
+      position:static;
+    }
+  
+    pre, code {
+      word-wrap:normal;
+    }
+  }
+  
+  @media print, screen and (max-width: 480px) {
+    body {
+      padding:15px;
+    }
+  
+    header ul {
+      width:99%;
+    }
+  
+    header li, header ul li + li + li {
+      width:33%;
+    }
+  }
+  
+  @media print {
+    body {
+      padding:0.4in;
+      font-size:12pt;
+      color:#272727;
+    }
+  }
+
+  #jumbotron{
+    display: block;
+    position: static !important;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/jumbotron.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    transition: opacity 0.5s ease;
+  }
+  header .logo-text{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .logo{
+    border-radius: 50%;
+  }
+main{
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+  height: 100vh;
+}
+.fa-instagram{
+  background-image: radial-gradient(circle at 0% 0%, rgb(79, 91, 213) 0%, rgb(150, 47, 191) 25%, rgb(214, 41, 118) 50%, rgb(250, 126, 30) 75%, rgb(254, 218, 117) 100%) !important;
+  background-clip: text !important;
+  background-size: 100% !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  -moz-background-clip: text !important;
+  -moz-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+.fa-facebook{
+  color: #1877F2;
+}
+.input-group .btn-dark{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(244,0,255,1) 50%, rgba(255,255,255,1) 100%);
+  background-clip: text !important;
+  background-size: 100% !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  -moz-background-clip: text !important;
+  -moz-text-fill-color: transparent !important;
+  color: transparent !important;
+  font-weight: bold;
+  border: 2px solid rgba(244,0,255,1);
+}
+#canvas{
+  border-color: rgba(244,0,255,1);
+}
+
+#students input[type="checkbox"]:checked + label[for^=student-] {
+  color: rgba(244,0,255,1) !important;
+  -webkit-text-fill-color: rgba(244,0,255,1) !important;
+  font-weight: bold;
+  padding-left: 10px;
+}
+input[type="checkbox"]:not(:checked) + label[for^=student-]{
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-weight: bold;
+  padding-left: 10px;
+}
+#winnerModal{
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background-image: url('../images/tattoo7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+  position: fixed;
+  top: 200px;
+  right: -70px;
+  left: 0;
+  z-index: 3;
+  margin: 0 auto;
+}
+.modalTxt{
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  color: #f400ff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+}
+#closeX{
+  line-height: normal;
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  border-radius: 50%;
+  color: #f400ff;
+  border: 2px solid rgba(244, 0 ,255,1);
+  padding: 5px;
+  cursor: pointer;
+}
+#closeX:hover{
+  border: 2px dotted #f400ff;
+}
