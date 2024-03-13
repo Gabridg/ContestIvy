@@ -143,7 +143,7 @@ function showWinnerModal(winnerName) {
     spinStart: 0,
     timerDelay: 33,
     timerHandle: 0,
-    upTime: 3000,
+    upTime: 6000, // Spinning time
   
     spin: function () {
       // Start the wheel only if it's not already spinning
